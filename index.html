@@ -17,16 +17,12 @@
 
         .profile-pic-container {
             margin-right: 20px;
-            /* Adjust the margin as needed */
         }
 
         .profile-pic-container img {
             width: 200px;
-            /* Adjust the width as needed */
             height: 200px;
-            /* Adjust the height as needed */
             border-radius: 50%;
-            /* Make the image circular */
         }
 
         .about-text {
@@ -35,7 +31,6 @@
 
         body {
             cursor: none;
-            /* Hide the default cursor */
         }
 
         #circle-cursor {
@@ -43,20 +38,15 @@
             width: 20px;
             height: 20px;
             background-color: #ff6600;
-            /* Set the initial color of the circle */
             border-radius: 50%;
             mix-blend-mode: difference;
-            /* Set the blend mode */
             pointer-events: none;
-            /* Make the cursor not interactable */
             transform: translate(-50%, -50%);
             transition: background-color 0.3s ease;
-            /* Add a smooth transition effect */
         }
 
         body {
             overflow: hidden;
-            /* Hide overflow content during the transition */
         }
 
         .television-transition {
@@ -66,24 +56,19 @@
             width: 100%;
             height: 100%;
             background-color: #000;
-            /* Initial background color */
             z-index: 1000;
             animation: televisionAnimation 1s ease-out forwards;
-            /* Animation duration and timing function */
         }
 
         @keyframes televisionAnimation {
             0% {
                 background-color: #00f;
-                /* Initial background color */
                 height: 100%;
             }
 
             100% {
                 background-color: #000;
-                /* Final background color (black) */
                 height: 2px;
-                /* Height of the single line */
             }
         }
     </style>
@@ -91,7 +76,6 @@
 
 <body class="is-preload">
 
-    <!-- Sidebar -->
     <section id="sidebar">
         <div class="inner">
             <nav>
@@ -108,22 +92,20 @@
         </div>
     </section>
 
-    <!-- Wrapper -->
     <div id="wrapper">
 
-        <!-- Intro -->
         <section id="intro" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
                 <h1>Vivek Kumar Sahu</h1>
-                <p>Computer Science Integrated M-Tech Student at VIT Bhopal | Aspiring Data Scientist</p>
+                <p>Integrated M-Tech Student at VIT Bhopal CSE(Computational and Data Science) | Aspiring Data Scientist
+                    | AI/ML | Python | R | SQL | Tableau | AWS |</p>
                 <ul class="actions">
                     <li><a href="#main" class="button scrolly">About Me</a></li>
                 </ul>
             </div>
         </section>
 
-        <!-- About Me -->
-        <section id="main" class="wrapper">
+        <section id="main" class="wrapper style2 fullscreen fade-up">
             <div class="inner">
                 <h1 class="major">About Me</h1>
                 <div class="about-section">
@@ -142,22 +124,11 @@
                         <p>Your exploration of my portfolio is not just an invitation but a glimpse into a world where
                             data transforms into meaningful narratives. I welcome you to connect with me for any queries
                             or exciting collaboration opportunities.</p>
-                        <p>Let's innovate, learn, and create together.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-
-        <!-- Skills -->
         <section id="two" class="wrapper style3 fade-up">
             <div class="inner">
                 <h2>Skills</h2>
@@ -171,29 +142,28 @@
                     <section>
                         <span class="icon solid major fa-cogs"></span>
                         <h3>Libraries/Frameworks</h3>
-                        <p>Pandas, NumPy, MatplotLib, Keras, SciPy, Scikit learn</p>
+                        <p>Pandas, NumPy, Keras, SciPy, Scikit learn</p>
                     </section>
                     <section>
                         <span class="icon solid major fa-database"></span>
                         <h3>Databases</h3>
                         <p>IBM Watson Studio, MySQL</p>
                     </section>
+                    <section>
+                        <span class="icon solid major fa-chart-bar"></span>
+                        <h3>Visualization</h3>
+                        <p>Tableau, Plotly, Seaborn</p>
+                    </section>
                 </div>
-                <!-- <ul class="actions">
-                    <li><a href="generic.html" class="button">Learn more</a></li>
-                </ul> -->
             </div>
         </section>
 
-        <!-- Projects -->
         <section id="three" class="wrapper style1 fade-up">
             <div class="inner">
                 <h2>Projects</h2>
                 <p>Dive into a showcase of my noteworthy projects.<br>
                     Each one reflects my passion for innovation and expertise in areas like data science and machine
                     learning.</p>
-
-                <!-- Project List -->
                 <ul class="project-list">
                     <li>
                         <h3>Cirrhosis Disease Prediction</h3>
@@ -209,62 +179,53 @@
                             strategies.</p>
                     </li>
                 </ul>
-
-                <!-- Button to View All Projects -->
-                <a href="all-projects.html" class="button">View All Projects</a>
+                <a href="https://github.com/Vivekkumarsahu07?tab=repositories" class="button">View All Projects</a>
             </div>
         </section>
 
-
-        <!-- Certifications -->
         <section id="four" class="wrapper style2 spotlights">
             <section>
                 <div class="content">
                     <div class="inner">
                         <h2>Certifications</h2>
-                        <p>Stay updated with my certifications:</p>
-
-                        <!-- Add the new certifications -->
+                        <p>Explore my journey through the realm of knowledge with these distinguished certifications:
+                        </p>
                         <ul class="certification-list">
                             <li>IBM Data Science Professional Certificate</li>
                             <li>Meta Marketing Analytics Professional Certificate</li>
                             <li>Data Visualization with Tableau Specialization</li>
                             <li>Problem Solving Using Computational Thinking</li>
+                            <li>Excel Basics for Data Analysis</li>
+                            <li>Introduction to Deep Learning & Neural Networks with Keras</li>
                         </ul>
-
                         <ul class="actions">
-                            <li><a href="certifications.html" class="button">View Certifications</a></li>
+                            <li><a href="https://www.coursera.org/user/5fa153912fac47921419523c2abc4c2a"
+                                    class="button">View Certifications</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
         </section>
 
-
-        <!-- Contact -->
         <section id="five" class="wrapper style3 fade-up">
             <div class="inner">
                 <h2>Contact</h2>
                 <p>Feel free to get in touch with me. I'm open to collaborations and discussions.</p>
                 <div class="split style1">
                     <section>
-                        <!-- Contact details -->
                         <ul class="contact-details">
                             <li>
                                 <span class="icon solid fa-envelope"></span>
-                                <!-- Assuming you have FontAwesome for icons -->
                                 <span>Email:</span> <a
                                     href="mailto:vivekkumarsahu979@gmail.com">vivekkumarsahu979@gmail.com</a>
                             </li>
                             <li>
                                 <span class="icon brands fa-linkedin"></span>
-                                <!-- Assuming you have FontAwesome for icons -->
-                                <span>LinkedIn:</span> <a href="https://www.linkedin.com/in/vivek-kumar-sahu-566246209/"
-                                    target="_blank">https://www.linkedin.com/in/vivek-kumar-sahu-566246209/</a>
+                                <span>LinkedIn:</span> <a
+                                    href="https://www.linkedin.com/in/vivek-kumar-sahu-566246209/" target="_blank">https://www.linkedin.com/in/vivek-kumar-sahu-566246209/</a>
                             </li>
                             <li>
                                 <span class="icon solid fa-phone"></span>
-                                <!-- Assuming you have FontAwesome for icons -->
                                 <span>Contact:</span> <a href="tel:+91 8299863438">+91 8299863438</a>
                             </li>
                         </ul>
@@ -273,19 +234,6 @@
             </div>
         </section>
 
-
-
-        <!-- Footer -->
-        <footer id="footer" class="wrapper style1-alt">
-            <div class="inner">
-                <ul class="menu">
-                    <li>&copy; Vivek Kumar Sahu. All rights reserved.</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </footer>
-
-        <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -307,13 +255,12 @@
                     circleCursor.style.top = mouseY + 'px';
                 });
 
-                // Optional: Change cursor color on hover
                 document.body.addEventListener('mouseenter', function () {
-                    circleCursor.style.backgroundColor = '#00ffcc'; // Set the hover color
+                    circleCursor.style.backgroundColor = '#00ffcc';
                 });
 
                 document.body.addEventListener('mouseleave', function () {
-                    circleCursor.style.backgroundColor = '#ff6600'; // Set the initial color on leaving the page
+                    circleCursor.style.backgroundColor = '#ff6600';
                 });
             });
         </script>
