@@ -32,7 +32,62 @@
         .about-text {
             flex-grow: 1;
         }
+
+        body {
+            cursor: none;
+            /* Hide the default cursor */
+        }
+
+        #circle-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6600;
+            /* Set the initial color of the circle */
+            border-radius: 50%;
+            mix-blend-mode: difference;
+            /* Set the blend mode */
+            pointer-events: none;
+            /* Make the cursor not interactable */
+            transform: translate(-50%, -50%);
+            transition: background-color 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        body {
+            overflow: hidden;
+            /* Hide overflow content during the transition */
+        }
+
+        .television-transition {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            /* Initial background color */
+            z-index: 1000;
+            animation: televisionAnimation 1s ease-out forwards;
+            /* Animation duration and timing function */
+        }
+
+        @keyframes televisionAnimation {
+            0% {
+                background-color: #00f;
+                /* Initial background color */
+                height: 100%;
+            }
+
+            100% {
+                background-color: #000;
+                /* Final background color (black) */
+                height: 2px;
+                /* Height of the single line */
+            }
+        }
     </style>
+</head>
 
 <body class="is-preload">
 
@@ -134,13 +189,32 @@
         <section id="three" class="wrapper style1 fade-up">
             <div class="inner">
                 <h2>Projects</h2>
-                <p>Explore some of my notable projects:</p>
-                <!-- Insert your project details here -->
-                <!-- <ul class="actions">
-                    <li><a href="generic.html" class="button">View Projects</a></li>
-                </ul> -->
+                <p>Dive into a showcase of my noteworthy projects.<br>
+                    Each one reflects my passion for innovation and expertise in areas like data science and machine
+                    learning.</p>
+
+                <!-- Project List -->
+                <ul class="project-list">
+                    <li>
+                        <h3>Cirrhosis Disease Prediction</h3>
+                        <p>Expertly employed diverse machine learning algorithms for cirrhosis disease prediction,
+                            enhancing accuracy through innovative feature selection using the Gravitational Search
+                            Algorithm, and delivering a user-friendly experience with a Streamlit interface.</p>
+                    </li>
+                    <li>
+                        <h3>Stock Market Data and Risk Analysis</h3>
+                        <p>Conducted thorough fundamental analysis of the Indian stock market, extracting valuable
+                            insights for informed investment decisions. Proficiently executed comprehensive risk
+                            analysis of US-based stocks, contributing to well-informed and risk-managed investment
+                            strategies.</p>
+                    </li>
+                </ul>
+
+                <!-- Button to View All Projects -->
+                <a href="all-projects.html" class="button">View All Projects</a>
             </div>
         </section>
+
 
         <!-- Certifications -->
         <section id="four" class="wrapper style2 spotlights">
@@ -149,14 +223,23 @@
                     <div class="inner">
                         <h2>Certifications</h2>
                         <p>Stay updated with my certifications:</p>
-                        <!-- Insert your certification details here -->
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">View Certifications</a></li>
-                        </ul> -->
+
+                        <!-- Add the new certifications -->
+                        <ul class="certification-list">
+                            <li>IBM Data Science Professional Certificate</li>
+                            <li>Meta Marketing Analytics Professional Certificate</li>
+                            <li>Data Visualization with Tableau Specialization</li>
+                            <li>Problem Solving Using Computational Thinking</li>
+                        </ul>
+
+                        <ul class="actions">
+                            <li><a href="certifications.html" class="button">View Certifications</a></li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </section>
+
 
         <!-- Contact -->
         <section id="five" class="wrapper style3 fade-up">
@@ -165,40 +248,82 @@
                 <p>Feel free to get in touch with me. I'm open to collaborations and discussions.</p>
                 <div class="split style1">
                     <section>
-                        <!-- Add your form fields here -->
-                        <ul class="actions">
-                            <li><a href="contact.html" class="button submit">Send Message</a></li>
+                        <!-- Contact details -->
+                        <ul class="contact-details">
+                            <li>
+                                <span class="icon solid fa-envelope"></span>
+                                <!-- Assuming you have FontAwesome for icons -->
+                                <span>Email:</span> <a
+                                    href="mailto:vivekkumarsahu979@gmail.com">vivekkumarsahu979@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="icon brands fa-linkedin"></span>
+                                <!-- Assuming you have FontAwesome for icons -->
+                                <span>LinkedIn:</span> <a href="https://www.linkedin.com/in/vivek-kumar-sahu-566246209/"
+                                    target="_blank">https://www.linkedin.com/in/vivek-kumar-sahu-566246209/</a>
+                            </li>
+                            <li>
+                                <span class="icon solid fa-phone"></span>
+                                <!-- Assuming you have FontAwesome for icons -->
+                                <span>Contact:</span> <a href="tel:+91 8299863438">+91 8299863438</a>
+                            </li>
                         </ul>
-
-                    </section>
-                    <section>
-                        <!-- Add your contact details here -->
                     </section>
                 </div>
             </div>
         </section>
 
-    </div>
 
-    <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-            <ul class="menu">
-                <li>&copy; Vivek Kumar Sahu. All rights reserved.</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Vivek Kumar Sahu. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
 
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const circleCursor = document.createElement('div');
+                circleCursor.id = 'circle-cursor';
+                document.body.appendChild(circleCursor);
+
+                document.addEventListener('mousemove', function (e) {
+                    const mouseX = e.clientX;
+                    const mouseY = e.clientY;
+
+                    circleCursor.style.left = mouseX + 'px';
+                    circleCursor.style.top = mouseY + 'px';
+                });
+
+                // Optional: Change cursor color on hover
+                document.body.addEventListener('mouseenter', function () {
+                    circleCursor.style.backgroundColor = '#00ffcc'; // Set the hover color
+                });
+
+                document.body.addEventListener('mouseleave', function () {
+                    circleCursor.style.backgroundColor = '#ff6600'; // Set the initial color on leaving the page
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const televisionTransition = document.createElement('div');
+                televisionTransition.classList.add('television-transition');
+                document.body.appendChild(televisionTransition);
+            });
+        </script>
 </body>
 
 </html>
